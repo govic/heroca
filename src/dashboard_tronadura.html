@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>Heroca | GESPYT</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="lib/animate.css/animate.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/toastr/toastr.min.css"/>
+
+    <!-- Fonts styles -->
+    <link rel="stylesheet" href="fonts/pe-icons/pe-icon-7-stroke.css"/>
+    <link rel="stylesheet" href="fonts/pe-icons/helper.css"/>
+    <link rel="stylesheet" href="fonts/stroke-icons/style.css"/>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-- Wrapper-->
+<div class="wrapper">
+
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    GESPYT
+                    <span>v.1.0</span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=" profil-link">
+                        <a href="login.html">
+                            <span class="profile-address">user@heroca.cl</span>
+                            <img src="img/user.jpg" class="img-circle" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header-->
+
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <li>
+                    <a class="nav-category" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-category" href="index.html">Tronadura</a>
+                </li>
+                <li>
+                    <a class="nav-category" href="dashboard_perforacion.html">Perforación</a>
+                </li>
+
+                <li>
+                    <a href="#kpis" data-toggle="collapse" aria-expanded="false">
+                        Indicadores de Rendimiento<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="kpis" class="nav nav-second collapse">
+                        <li><a href="#"> Disponibilidad</a></li>
+                        <li><a href="#"> Utilización Efectiva</a></li>
+                        <li><a href="#"> Rendimiento Efectivo</a></li>
+                        <li><a href="#"> Metros</a></li>
+                        <li><a href="#"> Tiempo</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#reports" data-toggle="collapse" aria-expanded="false">
+                        Informes<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="reports" class="nav nav-second collapse">
+                        <li><a href="#"> Informe por Turno</a></li>
+                        <li><a href="#"> Informe por Día</a></li>
+                        <li><a href="#"> Informe por Semana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-logo">
+            <a href="http://www.heroca.cl">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+    </aside>
+    <!-- End navigation-->
+
+
+    <!-- Main content-->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="view-header">
+                        <div class="header-icon m-r-sm">
+                            <i class="pe page-header-icon fa fa-bomb"></i>
+                        </div>
+                        <div class="header-title">
+                            <h3 class="m-b-xs">Tronadura - Panel de control</h3>
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ad in quae facere dolore labore laudantium quisquam maiores recusandae neque iste, magnam nostrum officiis, dolor voluptatum ipsam, a veniam reprehenderit.
+                            </small>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="tabs-container m-t-sm">
+                        <div class="tabs-left">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#machine-1" aria-expanded="false"><span class="slight">Perforadora D101</span></a></li>
+                                <li class=""><a data-toggle="tab" href="#machine-2" aria-expanded="false"><span class="slight">Perforadora D102</span></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="machine-1" class="tab-pane active">
+                                    <div class="panel-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+
+                                                    <span class="c-white">Destino:</span> <span class="slight c-gray">DUMP</span>
+                                                    <span class="c-white">Ubicación:</span> <span class="slight c-gray">F05_4305_015</span>
+
+                                                    <div class="panel panel-filled">
+                                                        <div class="panel-heading text-center">
+                                                            <div class="panel-tools">
+                                                                <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                            Gráfico
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="flot-chart">
+                                                                <div class="flot-chart-content" id="chart_kpi_machine_1"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="machine-2" class="tab-pane">
+                                    <div class="panel-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="panel panel-filled">
+                                                        <div class="panel-heading text-center">
+                                                            <div class="panel-tools">
+                                                                <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                            Gráfico
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="flot-chart">
+                                                                <div class="flot-chart-content" id="chart_kpi_machine_2"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End main content-->
+
+</div>
+<!-- End wrapper-->
+
+<!-- Vendor scripts -->
+<script src="lib/PACE/pace.min.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/toastr/toastr.min.js"></script>
+<script src="lib/sparkline/index.js"></script>
+<script src="lib/gaugemeter/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+<script src="lib/Flot/jquery.flot.js"></script>
+<script src="lib/Flot/jquery.flot.resize.js"></script>
+<script src="lib/Flot/jquery.flot.categories.js"></script>
+<script src="lib/jquery.flot.spline/index.js"></script>
+<script src="lib/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
+<!-- App scripts -->
+<script src="js/app.js"></script>
+
+<script>
+        var data_seed = [[0, 16], [10, 24], [30, 11], [50, 7], [60, 10], [80, 15], [100, 24]]
+
+        var data_machine1_tronadura = {
+            label: "tronadura",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+        var data_machine2_tronadura = {
+            label: "tronadura",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+    $(document).ready(function () {
+
+
+
+        var chartUsersOptions = {
+            series: {
+                splines: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 3
+                }
+            },
+            colors: [ "#f7af3e","#3090c0"],
+            tooltip: {
+                show: true,
+                content: "%s: %y\%"
+            },
+            grid: {
+                tickColor: "#404652",
+                borderWidth: 0,
+                borderColor: '#404652',
+                color: '#404652',
+                hoverable: true
+            }
+        };
+
+        $.plot($("#chart_kpi_machine_1"), [data_machine1_tronadura], chartUsersOptions);
+        $.plot($("#chart_kpi_machine_2"), [data_machine2_tronadura], chartUsersOptions);
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "GESPYT",
+  "authors": [
+    "Camilo Farfán <camilo.farfanp@gmail.com>"
+  ],
+  "description": "Gestión de Perforación y Tronadura",
+  "main": "",
+  "license": "Copyright Heroca Ltda.",
+  "homepage": "http://www.heroca.cl",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.1",
+    "animate.css": "^3.5.1",
+    "bootstrap": "^3.3.6",
+    "toastr": "^2.1.2",
+    "gaugemeter": "https://github.com/AshAlom/GaugeMeter.git",
+    "sparkline": "http://omnipotent.net/jquery.sparkline/latest/jquery.sparkline.js",
+    "PACE": "pace#^1.0.2",
+    "Flot": "flot#^0.8.3",
+    "flot.tooltip": "^0.8.7",
+    "jquery.flot.spline": "https://raw.githubusercontent.com/AMKohn/flot/master/jquery.flot.spline.js"
+  }
+}

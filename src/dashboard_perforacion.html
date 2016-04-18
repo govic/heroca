@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>Heroca | GESPYT</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="lib/animate.css/animate.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/toastr/toastr.min.css"/>
+
+    <!-- Fonts styles -->
+    <link rel="stylesheet" href="fonts/pe-icons/pe-icon-7-stroke.css"/>
+    <link rel="stylesheet" href="fonts/pe-icons/helper.css"/>
+    <link rel="stylesheet" href="fonts/stroke-icons/style.css"/>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-- Wrapper-->
+<div class="wrapper">
+
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    GESPYT
+                    <span>v.1.0</span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=" profil-link">
+                        <a href="login.html">
+                            <span class="profile-address">user@heroca.cl</span>
+                            <img src="img/user.jpg" class="img-circle" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header-->
+
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <li>
+                    <a class="nav-category" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-category" href="index.html">Tronadura</a>
+                </li>
+                <li>
+                    <a class="nav-category" href="index.html">Perforación</a>
+                </li>
+
+                <li>
+                    <a href="#kpis" data-toggle="collapse" aria-expanded="false">
+                        Indicadores de Rendimiento<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="kpis" class="nav nav-second collapse">
+                        <li><a href="#"> Disponibilidad</a></li>
+                        <li><a href="#"> Utilización Efectiva</a></li>
+                        <li><a href="#"> Rendimiento Efectivo</a></li>
+                        <li><a href="#"> Metros</a></li>
+                        <li><a href="#"> Tiempo</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#reports" data-toggle="collapse" aria-expanded="false">
+                        Informes<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="reports" class="nav nav-second collapse">
+                        <li><a href="#"> Informe por Turno</a></li>
+                        <li><a href="#"> Informe por Día</a></li>
+                        <li><a href="#"> Informe por Semana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-logo">
+            <a href="http://www.heroca.cl">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+    </aside>
+    <!-- End navigation-->
+
+
+    <!-- Main content-->
+    <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="view-header">
+                            <div class="header-icon m-r-sm">
+                                <i class="pe page-header-icon fa fa-cogs"></i>
+                            </div>
+                            <div class="header-title">
+                                <h3 class="m-b-xs">Perforación - Panel de control central</h3>
+                                <small>
+                                    Incorporación de la información de perforación al centro integrado de operaciones MINA CASERONES
+                                </small>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6>Indicadores de Rendimiento Flota de Perforación</h6>
+                    </div>
+                    <div class="col-lg-3 col-xs-12">
+                        <div class="panel panel-filled" style="position:relative;height: 114px">
+                            <div style="position: absolute;bottom: 0;left: 0;right: 0">
+                                <span class="sparkline" id="sparkline-1"></span>
+                            </div>
+                            <div class="panel-body">
+                                <div class="m-t-sm">
+                                    <div class="c-white">
+                                        <a href="detalle_kpi.html">Disponibilidad</a>
+                                    </div>
+                                    <span class="small c-white">78% <i class="fa fa-play fa-rotate-270 c-green"> </i> +22%</span>
+                                    <!--<span class="sparkline"></span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12">
+                        <div class="panel panel-filled" style="position:relative;height: 114px">
+                            <div style="position: absolute;bottom: 0;left: 0;right: 0">
+                                <span class="sparkline" id="sparkline-2"></span>
+                            </div>
+                            <div class="panel-body">
+                                <div class="m-t-sm">
+                                    <div class="c-white">
+                                        <a href="detalle_kpi.html">Utilización efectiva</a>
+                                    </div>
+                                    <span class="small c-white">78% <i class="fa fa-play fa-rotate-270 c-green"> </i> +22%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12">
+                        <div class="panel panel-filled" style="position:relative;height: 114px">
+                            <div style="position: absolute;bottom: 0;left: 0;right: 0">
+                                <span class="sparkline" id="sparkline-3"></span>
+                            </div>
+                            <div class="panel-body">
+                                <div class="m-t-sm">
+                                    <div class="c-white">
+                                        <a href="detalle_kpi.html">Rendimiento efectivo</a>
+                                    </div>
+                                    <span class="small c-white">78% <i class="fa fa-play fa-rotate-270 c-green"> </i> +22%</span>
+                                    <!--<span class="sparkline"></span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12">
+                        <div class="panel panel-filled" style="position:relative;height: 114px">
+                            <div style="position: absolute;bottom: 0;left: 0;right: 0">
+                                <span class="sparkline" id="sparkline-4"></span>
+                            </div>
+                            <div class="panel-body">
+                                <div class="m-t-sm">
+                                    <div class="c-white">
+                                        <a href="detalle_kpi.html">Metros</a>
+                                    </div>
+                                    <span class="small c-white">78% <i class="fa fa-play fa-rotate-270 c-green"> </i> +22%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6>Máquinas de perforación</h6>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                </div>
+                                <a href="detalle_perforadora.html">Perforadora D101</a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="24"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80</span> <br>
+                                            <span class="c-white">Pozos Perforados</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="89"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80</span> <br>
+                                            <span class="c-white">Metros Perforados</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <small><span class="c-white">Operador:</span> Juan Luis Cavas Pizarro</small> <br>
+                                        <small><span class="c-white">Banco:</span> 4400 </small> <br>
+                                        <small><span class="c-white">Malla:</span> 05C4385_050 </small> <br>
+                                        <small><span class="c-white">Pozo Actual:</span> 18 </small> <br>
+                                        <small><span class="c-white">UGP:</span> 7 </small>
+                                    </div>
+                                </div><!-- row -->
+
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                        </h2>
+                                        <div class="small">Disponibilidad</div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            67 <span class="slight"><i class="fa fa-play fa-rotate-90 c-red"> </i> -12%</span>
+                                        </h2>
+                                        <div class="small">Utilización efectiva</div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            78 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                        </h2>
+                                        <div class="small">Rendimiento efectivo</div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            91 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +12%</span>
+                                        </h2>
+                                        <div class="small">Metros</div>
+                                    </div>
+                                </div><!-- row -->
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="tabs-container m-t-sm">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#machine-1-tab-1" aria-expanded="true"><span class="slight"><i class="fa fa-cog"></i> Parámetros operacionales</span></a></li>
+                                                <li class=""><a data-toggle="tab" href="#machine-1-tab-2" aria-expanded="false"><span class="slight"><i class="fa fa-bolt"></i> Estado operacional</span></a></li>
+                                                <li class=""><a data-toggle="tab" href="#machine-1-tab-3" aria-expanded="false"><span class="slight"><i class="fa fa-cubes"></i> Insumos</span></a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="machine-1-tab-1" class="tab-pane active">
+                                                    <div class="panel-body">
+                                                        <table class="table table-bordered heroca-table m-b-none">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-toggle="tooltip" title="Metros perforados">Mts.P</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">R.Ef</th>
+                                                                    <th>V.Pen</th>
+                                                                    <th>PD</th>
+                                                                    <th>RPM</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        0.000
+                                                                    </td>
+                                                                    <td>
+                                                                        0.000
+                                                                    </td>
+                                                                    <td>
+                                                                        0.000
+                                                                    </td>
+                                                                    <td>
+                                                                        0.000
+                                                                    </td>
+                                                                    <td>
+                                                                        22342
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div id="machine-1-tab-2" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <table class="table table-bordered heroca-table m-b-none">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-toggle="tooltip" title="Metros perforados">Estado</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">Duración</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><span class="c-red">Sin operador</span></td>
+                                                                    <td>0.0 hr</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div id="machine-1-tab-3" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <table class="table table-bordered heroca-table m-b-none">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-toggle="tooltip" title="Metros perforados">Cód. Tricono</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">Diámetro</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">Metros</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1037959</td>
+                                                                    <td>10-5/8</td>
+                                                                    <td>9570 m</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slight m-t-sm"><i class="fa fa-clock-o"> </i> Última actualización: <span class="c-white">10:22pm</span>  </div>
+                            </div>
+                        </div>
+                    </div><!--.machine-->
+
+                    <div class="col-xs-6">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                </div>
+                                <a href="detalle_perforadora.html">Perforadora D102</a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="24"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80</span> <br>
+                                            <span class="c-white">Pozos Perforados</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="57"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80</span> <br>
+                                            <span class="c-white">Metros Perforados</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <small><span class="c-white">Operador:</span> Juan Luis Cavas Pizarro</small> <br>
+                                        <small><span class="c-white">Banco:</span> 4400 </small> <br>
+                                        <small><span class="c-white">Malla:</span> 05C4385_050 </small> <br>
+                                        <small><span class="c-white">Pozo Actual:</span> 18 </small> <br>
+                                        <small><span class="c-white">UGP:</span> 7 </small>
+                                    </div>
+                                </div><!-- row -->
+
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                        </h2>
+                                        <div class="small">Disponibilidad</div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            67 <span class="slight"><i class="fa fa-play fa-rotate-90 c-red"> </i> -12%</span>
+                                        </h2>
+                                        <div class="small">Utilización efectiva</div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            78 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                        </h2>
+                                        <div class="small">Rendimiento efectivo</div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h2 class="m-b-none">
+                                            91 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +12%</span>
+                                        </h2>
+                                        <div class="small">Metros</div>
+                                    </div>
+                                </div><!-- row -->
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="tabs-container m-t-sm">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#machine-2-tab-1" aria-expanded="true"><span class="slight"><i class="fa fa-cog"></i> Parámetros operacionales</span></a></li>
+                                                <li class=""><a data-toggle="tab" href="#machine-2-tab-2" aria-expanded="false"><span class="slight"><i class="fa fa-bolt"></i> Estado operacional</span></a></li>
+                                                <li class=""><a data-toggle="tab" href="#machine-2-tab-3" aria-expanded="false"><span class="slight"><i class="fa fa-cubes"></i> Insumos</span></a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="machine-2-tab-1" class="tab-pane active">
+                                                    <div class="panel-body">
+                                                        <table class="table table-bordered heroca-table m-b-none">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-toggle="tooltip" title="Metros perforados">Mts.P</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">R.Ef</th>
+                                                                    <th>V.Pen</th>
+                                                                    <th>PD</th>
+                                                                    <th>RPM</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="progress m-t-xs full progress-small">
+                                                                            <div style="width: 15%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="35" role="progressbar" class=" progress-bar progress-bar-danger">
+                                                                                <span class="sr-only">35% Complete (success)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="progress m-t-xs full progress-small">
+                                                                            <div style="width: 70%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="35" role="progressbar" class=" progress-bar progress-bar-success">
+                                                                                <span class="sr-only">35% Complete (success)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="progress m-t-xs full progress-small">
+                                                                            <div style="width: 50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="35" role="progressbar" class=" progress-bar progress-bar-warning">
+                                                                                <span class="sr-only">35% Complete (success)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="progress m-t-xs full progress-small">
+                                                                            <div style="width: 35%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="35" role="progressbar" class=" progress-bar progress-bar-warning">
+                                                                                <span class="sr-only">35% Complete (success)</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        22342
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div id="machine-2-tab-2" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <table class="table table-bordered heroca-table m-b-none">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-toggle="tooltip" title="Metros perforados">Estado</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">Duración</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><span class="c-red">Sin operador</span></td>
+                                                                    <td>0.0 hr</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div id="machine-2-tab-3" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <table class="table table-bordered heroca-table m-b-none">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-toggle="tooltip" title="Metros perforados">Cód. Tricono</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">Diámetro</th>
+                                                                    <th data-toggle="tooltip" title="Rendimiento efectivo">Metros</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1037959</td>
+                                                                    <td>10-5/8</td>
+                                                                    <td>9570 m</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slight m-t-sm"><i class="fa fa-clock-o"> </i> Última actualización: <span class="c-white">10:22pm</span>  </div>
+                            </div>
+                        </div>
+                    </div><!--.machine-->
+                </div>
+
+            </div>
+    </section>
+    <!-- End main content-->
+
+</div>
+<!-- End wrapper-->
+
+<!-- Vendor scripts -->
+<script src="lib/PACE/pace.min.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/toastr/toastr.min.js"></script>
+<script src="lib/sparkline/index.js"></script>
+<script src="lib/gaugemeter/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+<script src="lib/Flot/jquery.flot.js"></script>
+<script src="lib/Flot/jquery.flot.resize.js"></script>
+<script src="lib/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
+<!-- App scripts -->
+<script src="js/app.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        var sparklineCharts = function () {
+            $("#sparkline-1").sparkline([20, 34, 43, 43, 35, 44, 32], {
+                type: 'line',
+                lineColor: '#FFFFFF',
+                lineWidth: 3,
+                fillColor: '#404652',
+                height: 47,
+                width: '100%'
+            });
+
+            $("#sparkline-2").sparkline([10, 34, 13, 33, 35, 24, 32], {
+                type: 'line',
+                lineColor: '#FFFFFF',
+                lineWidth: 3,
+                fillColor: '#404652',
+                height: 47,
+                width: '100%'
+            });
+
+            $("#sparkline-3").sparkline([0, 6, 8, 3, 2, 4, 3], {
+                type: 'line',
+                lineColor: '#FFFFFF',
+                lineWidth: 3,
+                fillColor: '#404652',
+                height: 47,
+                width: '100%'
+            });
+
+            $("#sparkline-4").sparkline([-8, 2, 4, 3, 5, 4, 3], {
+                type: 'line',
+                lineColor: '#FFFFFF',
+                lineWidth: 3,
+                fillColor: '#404652',
+                height: 47,
+                width: '100%'
+            });
+        };
+
+        var sparkResize;
+
+        // Resize sparkline charts on window resize
+        $(window).resize(function () {
+            clearTimeout(sparkResize);
+            sparkResize = setTimeout(sparklineCharts, 100);
+        });
+
+        // Run sparkline
+        sparklineCharts();
+    });
+</script>
+
+</body>
+
+</html>

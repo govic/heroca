@@ -1,0 +1,23 @@
+.panel{
+  &.panel-with-bg{
+    position: relative;
+    min-height: 300px;
+    &.panel-filled{
+      background-color: rgba(0,0,0,0.8);
+    }
+    > .panel-bg{
+      position: absolute;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      z-index: -1;
+      > img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+}

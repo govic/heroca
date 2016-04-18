@@ -1,0 +1,22 @@
+{
+  "name": "GESPYT",
+  "version": "0.1.0",
+  "description": "Gestión de Perforación y Tronadura",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.4",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "lodash": "^4.0.0"
+  },
+  "author": "Camilo Farfán <camilo.farfanp@gmail.com>",
+  "license": "Copyright Heroca Ltda.",
+  "homepage": "http://www.heroca.cl"
+}
