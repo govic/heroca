@@ -26,6 +26,8 @@
     "PACE": "pace#^1.0.2",
     "Flot": "flot#^0.8.3",
     "flot.tooltip": "^0.8.7",
-    "jquery.flot.spline": "https://raw.githubusercontent.com/AMKohn/flot/master/jquery.flot.spline.js"
+    "jquery.flot.spline": "https://raw.githubusercontent.com/AMKohn/flot/master/jquery.flot.spline.js",
+    "datatables.net": "^1.10.11",
+    "datatables.net-bs": "^1.10.11"
   }
 }
