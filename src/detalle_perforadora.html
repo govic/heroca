@@ -89,7 +89,7 @@
                         <li><a href="detalle_kpi.html"> Utilización Efectiva</a></li>
                         <li><a href="detalle_kpi.html"> Rendimiento Efectivo</a></li>
                         <li><a href="detalle_kpi.html"> Metros</a></li>
-                        <li><a href="detalle_kpi_tiempo.html"> Tiempo</a></li>
+                        <li><a href="detalle_tiempos.html"> Tiempo</a></li>
                     </ul>
                 </li>
 
@@ -102,6 +102,9 @@
                         <li><a href="informe_dia.html"> Informe por Día</a></li>
                         <li><a href="informe_semana.html"> Informe por Semana</a></li>
                     </ul>
+                </li>
+                <li>
+                    <a class="nav-category" href="parametros_operacionales.html">Parámetros Operacionales</a>
                 </li>
             </ul>
         </nav>
@@ -167,6 +170,94 @@
 
                 </div>
                 <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <a href="detalle_tiempos.html">Tiempos</a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-2 text-center col-sm-offset-1">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="24"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80 hrs</span> <br>
+                                            <span class="c-white">T. Efectivo</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="89"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80 hrs</span> <br>
+                                            <span class="c-white">T. Pérdida Operacional</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="24"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80 hrs</span> <br>
+                                            <span class="c-white">T. Demora</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="89"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80 hrs</span> <br>
+                                            <span class="c-white">T. Reserva</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="gaugemeter" id="gauge_1"
+                                            data-percent="24"
+                                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                                            data-size="100"
+                                            data-width="10"
+                                            data-style="Semi"
+                                            data-theme="Red-Gold-Green"
+                                            data-label_color="#ffffff"
+                                        ></div>
+                                        <div class="small text-center">
+                                            <span class="slight">34/80 hrs</span> <br>
+                                            <span class="c-white">T. Mantención</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-5 m-t-sm">
                         <div class="panel panel-filled">
                             <div class="panel-heading">
@@ -175,7 +266,7 @@
                                          98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
                                     </h2>
                                 </div>
-                                <h5>Disponibilidad</h5>
+                                <h5><a href="detalle_kpi.html">Disponibilidad</a></h5>
                             </div>
                             <div class="panel-body">
 
@@ -191,7 +282,7 @@
                                          67 <span class="slight"><i class="fa fa-play fa-rotate-90 c-red"> </i> -12%</span>
                                     </h2>
                                 </div>
-                                <h5>Utilización efectiva</h5>
+                                <h5><a href="detalle_kpi.html">Utilización efectiva</a></h5>
                             </div>
                             <div class="panel-body">
                                 <div id="chart_kpi_utilizacion" style="height: 200px;"></div>
@@ -206,7 +297,7 @@
                                          78 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
                                     </h2>
                                 </div>
-                                <h5>Rendimiento efectivo</h5>
+                                <h5><a href="detalle_kpi.html">Rendimiento efectivo</a></h5>
                             </div>
                             <div class="panel-body">
                                 <div id="chart_kpi_rendimiento" style="height: 200px;"></div>
@@ -221,66 +312,10 @@
                                          91 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +12%</span>
                                     </h2>
                                 </div>
-                                <h5>Metros</h5>
+                                <h5><a href="detalle_kpi.html">Metros</a></h5>
                             </div>
                             <div class="panel-body">
                                 <div id="chart_kpi_metros" style="height: 200px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 m-t-sm">
-                        <div class="panel panel-filled">
-                            <div class="panel-heading">
-                                <h5>Tiempos</h5>
-                            </div>
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-6 m-t-sm">
-                                        <div class="pull-right">
-                                            <h4 class="m-b-none">
-                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
-                                            </h4>
-                                        </div>
-                                        <h5>Efectivo</h5>
-                                        <div id="chart_kpi_tiempo_efectivo" style="height: 200px;"></div>
-                                    </div>
-                                    <div class="col-md-6 m-t-sm">
-                                        <div class="pull-right">
-                                            <h4 class="m-b-none">
-                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
-                                            </h4>
-                                        </div>
-                                        <h5>Pérdida Operacional</h5>
-                                        <div id="chart_kpi_tiempo_perdida" style="height: 200px;"></div>
-                                    </div>
-                                    <div class="col-md-4 m-t-sm">
-                                        <div class="pull-right">
-                                            <h4 class="m-b-none">
-                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
-                                            </h4>
-                                        </div>
-                                        <h5>Demora</h5>
-                                        <div id="chart_kpi_tiempo_demora" style="height: 200px;"></div>
-                                    </div>
-                                    <div class="col-md-4 m-t-sm">
-                                        <div class="pull-right">
-                                            <h4 class="m-b-none">
-                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
-                                            </h4>
-                                        </div>
-                                        <h5>Reserva</h5>
-                                        <div id="chart_kpi_tiempo_reserva" style="height: 200px;"></div>
-                                    </div>
-                                    <div class="col-md-4 m-t-sm">
-                                        <div class="pull-right">
-                                            <h4 class="m-b-none">
-                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
-                                            </h4>
-                                        </div>
-                                        <h5>Mantención</h5>
-                                        <div id="chart_kpi_tiempo_mantencion" style="height: 200px;"></div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
