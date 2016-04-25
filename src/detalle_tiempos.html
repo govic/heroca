@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>Heroca | GESPYT</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="lib/animate.css/animate.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/toastr/toastr.min.css"/>
+
+    <!-- Fonts styles -->
+    <link rel="stylesheet" href="fonts/pe-icons/pe-icon-7-stroke.css"/>
+    <link rel="stylesheet" href="fonts/pe-icons/helper.css"/>
+    <link rel="stylesheet" href="fonts/stroke-icons/style.css"/>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-- Wrapper-->
+<div class="wrapper">
+
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    GESPYT
+                    <span>v.1.0</span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=" profil-link">
+                        <a href="login.html">
+                            <span class="profile-address">user@heroca.cl</span>
+                            <img src="img/user.jpg" class="img-circle" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header-->
+
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <li>
+                    <a class="nav-category" href="index.html">Inicio</a>
+                    <hr>
+                </li>
+                <li>
+                    <a class="nav-category" href="dashboard_tronadura.html">Tronadura</a>
+                    <hr>
+                </li>
+                <li>
+                    <a class="nav-category" href="dashboard_perforacion.html">Perforación</a>
+                </li>
+
+                <li>
+                    <a href="#kpis" data-toggle="collapse" aria-expanded="false">
+                        Indicadores de Rendimiento<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="kpis" class="nav nav-second collapse">
+                        <li><a href="detalle_kpi.html"> Disponibilidad</a></li>
+                        <li><a href="detalle_kpi.html"> Utilización Efectiva</a></li>
+                        <li><a href="detalle_kpi.html"> Rendimiento Efectivo</a></li>
+                        <li><a href="detalle_kpi.html"> Metros</a></li>
+                        <li><a href="detalle_tiempos.html"> Tiempo</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#reports" data-toggle="collapse" aria-expanded="false">
+                        Informes<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="reports" class="nav nav-second collapse">
+                        <li><a href="informe_turno.html"> Informe por Turno</a></li>
+                        <li><a href="informe_dia.html"> Informe por Día</a></li>
+                        <li><a href="informe_semana.html"> Informe por Semana</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-category" href="parametros_operacionales.html">Parámetros Operacionales</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-logo">
+            <a href="http://www.heroca.cl">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+    </aside>
+    <!-- End navigation-->
+
+
+    <!-- Main content-->
+    <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="view-header">
+                            <div class="header-icon m-r-sm">
+                                <i class="pe page-header-icon fa fa-clock-o"></i>
+                            </div>
+                            <div class="header-title">
+                                <h3 class="m-b-xs">Tiempos</h3>
+                                <small>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ad in quae facere dolore labore laudantium quisquam maiores recusandae neque iste, magnam nostrum officiis, dolor voluptatum ipsam, a veniam reprehenderit.
+                                </small>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="tabs-container m-t-sm">
+                            <div class="tabs-left">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#fleet" aria-expanded="true"><span class="slight">Flota de perforación</span></a></li>
+                                    <li class=""><a data-toggle="tab" href="#machine-1" aria-expanded="false"><span class="slight">Perforadora D101</span></a></li>
+                                    <li class=""><a data-toggle="tab" href="#machine-2" aria-expanded="false"><span class="slight">Perforadora D102</span></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="fleet" class="tab-pane active">
+                                        <div class="panel-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="panel panel-filled">
+                                                            <div class="panel-heading text-center">
+                                                                <div class="panel-tools">
+                                                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                                </div>
+                                                                Gráfico
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="flot-chart">
+                                                                            <div class="flot-chart-content" id="chart_tiempo_dia"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="flot-chart">
+                                                                            <div class="flot-chart-content" id="chart_tiempo_semana"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="panel panel-filled">
+                                                            <div class="panel-heading text-center">
+                                                                <div class="panel-tools">
+                                                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                                </div>
+                                                                Detalle
+                                                            </div>
+                                                            <div class="panel-body">
+
+                                                                <div class="table-responsive m-t-sm">
+                                                                    <!-- <span class="slight"><i class="fa fa-hourglass-half"></i> Avance del proceso</span> -->
+                                                                    <table id="report-fleet" class="table table-bordered table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th>Flota de perforación</th>
+                                                    <th colspan="3"><a href="detalle_tiempos_tipo.html">Efectiva</a></th>
+                                                    <th colspan="3"><a href="detalle_tiempos_tipo.html">Pérdidas Operacionales</a></th>
+                                                    <th colspan="3"><a href="detalle_tiempos_tipo.html">Demoras</a></th>
+                                                    <th colspan="3"><a href="detalle_tiempos_tipo.html">Reservas</a></th>
+                                                    <th colspan="3"><a href="detalle_tiempos_tipo.html">Mantenciones</a></th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Día</th>
+                                                    <th>Real</th>
+                                                    <th>Plan</th>
+                                                    <th>Diferencia</th>
+                                                    <th>Real</th>
+                                                    <th>Plan</th>
+                                                    <th>Diferencia</th>
+                                                    <th>Real</th>
+                                                    <th>Plan</th>
+                                                    <th>Diferencia</th>
+                                                    <th>Real</th>
+                                                    <th>Plan</th>
+                                                    <th>Diferencia</th>
+                                                    <th>Real</th>
+                                                    <th>Plan</th>
+                                                    <th>Diferencia</th>
+                                                </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>03-feb</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>04-feb</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>05-feb</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06-feb</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07-feb</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08-feb</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09-feb</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr class="halt">
+                                                        <td>Total semana</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                    <tr class="halt">
+                                                        <td>Acumulado mensual</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                        <td>99.3</td>
+                                                        <td>98.7</td>
+                                                        <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                    </tr>
+                                                </tbody>
+
+
+                                            </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="machine-1" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="panel panel-filled">
+                                                            <div class="panel-heading text-center">
+                                                                <div class="panel-tools">
+                                                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                                </div>
+                                                                Gráfico
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="flot-chart">
+                                                                            <div class="flot-chart-content" id="chart_tiempo_dia_1"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="flot-chart">
+                                                                            <div class="flot-chart-content" id="chart_tiempo_semana_1"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="panel panel-filled">
+                                                            <div class="panel-heading text-center">
+                                                                <div class="panel-tools">
+                                                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                                </div>
+                                                                Detalle
+                                                            </div>
+                                                            <div class="panel-body">
+
+                                                                <div class="table-responsive m-t-sm">
+                                                                    <!-- <span class="slight"><i class="fa fa-hourglass-half"></i> Avance del proceso</span> -->
+                                                                    <table id="report-fleet" class="table table-bordered table-hover">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Perforadora D101</th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Efectiva</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Pérdidas Operacionales</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Demoras</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Reservas</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Mantenciones</a></th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Día</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                        </tr>
+                                                                        </thead>
+
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>03-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>04-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>05-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>06-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>07-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>08-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>09-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr class="halt">
+                                                                                <td>Total semana</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr class="halt">
+                                                                                <td>Acumulado mensual</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                        </tbody>
+
+
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="machine-2" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="panel panel-filled">
+                                                            <div class="panel-heading text-center">
+                                                                <div class="panel-tools">
+                                                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                                </div>
+                                                                Gráfico
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="flot-chart">
+                                                                            <div class="flot-chart-content" id="chart_tiempo_dia_2"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="flot-chart">
+                                                                            <div class="flot-chart-content" id="chart_tiempo_semana_2"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="panel panel-filled">
+                                                            <div class="panel-heading text-center">
+                                                                <div class="panel-tools">
+                                                                    <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                                                    <a class="panel-close"><i class="fa fa-times"></i></a>
+                                                                </div>
+                                                                Detalle
+                                                            </div>
+                                                            <div class="panel-body">
+
+                                                                <div class="table-responsive m-t-sm">
+                                                                    <!-- <span class="slight"><i class="fa fa-hourglass-half"></i> Avance del proceso</span> -->
+                                                                    <table id="report-fleet" class="table table-bordered table-hover">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Perforadora D103</th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Efectiva</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Pérdidas Operacionales</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Demoras</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Reservas</a></th>
+                                                                            <th colspan="3"><a href="detalle_tiempos_tipo.html">Mantenciones</a></th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Día</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                            <th>Real</th>
+                                                                            <th>Plan</th>
+                                                                            <th>Diferencia</th>
+                                                                        </tr>
+                                                                        </thead>
+
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>03-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>04-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>05-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>06-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>07-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>08-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>09-feb</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr class="halt">
+                                                                                <td>Total semana</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                            <tr class="halt">
+                                                                                <td>Acumulado mensual</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                                <td>99.3</td>
+                                                                                <td>98.7</td>
+                                                                                <td><i class="fa fa-check-circle c-green"></i> 5.2</td>
+                                                                            </tr>
+                                                                        </tbody>
+
+
+                                                                    </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End main content-->
+
+</div>
+<!-- End wrapper-->
+
+<!-- Vendor scripts -->
+<script src="lib/PACE/pace.min.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/toastr/toastr.min.js"></script>
+<script src="lib/sparkline/index.js"></script>
+<script src="lib/gaugemeter/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+<script src="lib/Flot/jquery.flot.js"></script>
+<script src="lib/Flot/jquery.flot.resize.js"></script>
+<script src="lib/Flot/jquery.flot.categories.js"></script>
+<script src="lib/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
+<!-- App scripts -->
+<script src="js/app.js"></script>
+
+<script>
+    var data_seed_dia = [["Efectivo", 16], ["Pérdida Operacional", 24], ["Demora", 11], ["Reserva", 7], ["Mantención", 10]]
+    var data_seed_semana = [["16-mar", 16], ["17-mar", 24], ["18-mar", 11], ["19-mar", 7], ["20-mar", 10], ["21-mar", 15], ['22-mar', 24]]
+
+    var data_fleet_dia_plan = {
+        label: "plan",
+        data: data_seed_dia.map(function(o){return [o[0],o[1]*Math.random()]})
+    };
+    var data_fleet_dia_real = {
+        label: "real",
+        data: data_seed_dia.map(function(o){return [o[0],o[1]*Math.random()]})
+    };
+
+    var data_fleet_semana_real_mantencion = {
+        label: "Mantención",
+        data: data_seed_semana.map(function(o){return [o[0],o[1]*Math.random()]})
+    };
+
+    var data_fleet_semana_real_reserva = {
+        label: "Reserva",
+        data: data_seed_semana.map(function(o){return [o[0],o[1]*Math.random()]})
+    };
+
+    var data_fleet_semana_real_demora = {
+        label: "Demora",
+        data: data_seed_semana.map(function(o){return [o[0],o[1]*Math.random()]})
+    };
+
+    var data_fleet_semana_real_perdidaop = {
+        label: "Pérdida operacional",
+        data: data_seed_semana.map(function(o){return [o[0],o[1]*Math.random()]})
+    };
+    var data_fleet_semana_real_efectivo = {
+        label: "Efectivo",
+        data: data_seed_semana.map(function(o){return [o[0],o[1]*Math.random()]})
+    };
+
+    $(document).ready(function () {
+
+        var chartUsersOptions1 = {
+            series: {
+                lines: { show: true },
+                points: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 1,
+                    fill: 1
+                }
+            },
+            colors: [ "#00DFFC","#F07C19"],
+            tooltip: {
+                show: true,
+                content: "%s: %y\%"
+            },
+            xaxis: {
+                mode: "categories",
+                tickLength: 1
+            },
+            grid: {
+                tickColor: "#404652",
+                borderWidth: 0,
+                borderColor: '#404652',
+                color: '#404652',
+                hoverable: true
+            }
+        };
+
+
+
+        var chartUsersOptions2 = {
+            series: {
+                lines: { show: true },
+                points: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 1,
+                    fill: 1
+                }
+            },
+            colors: [ "#73C8A9","#DEE1B6","#E1B866","#BD5532","#373B44"],
+            tooltip: {
+                show: true,
+                content: "%s: %y\%"
+            },
+            xaxis: {
+                mode: "categories",
+                tickLength: 1
+            },
+            grid: {
+                tickColor: "#404652",
+                borderWidth: 0,
+                borderColor: '#404652',
+                color: '#404652',
+                hoverable: true
+            }
+        };
+
+
+        $.plot($("#chart_tiempo_dia"), [data_fleet_dia_plan, data_fleet_dia_real], chartUsersOptions1);
+        $.plot($("#chart_tiempo_semana"), [data_fleet_semana_real_mantencion, data_fleet_semana_real_reserva,data_fleet_semana_real_demora,data_fleet_semana_real_perdidaop,data_fleet_semana_real_efectivo], chartUsersOptions2);
+
+        $.plot($("#chart_tiempo_dia_1"), [data_fleet_dia_plan, data_fleet_dia_real], chartUsersOptions1);
+        $.plot($("#chart_tiempo_semana_1"), [data_fleet_semana_real_mantencion, data_fleet_semana_real_reserva,data_fleet_semana_real_demora,data_fleet_semana_real_perdidaop,data_fleet_semana_real_efectivo], chartUsersOptions2);
+        $.plot($("#chart_tiempo_dia_2"), [data_fleet_dia_plan, data_fleet_dia_real], chartUsersOptions1);
+        $.plot($("#chart_tiempo_semana_2"), [data_fleet_semana_real_mantencion, data_fleet_semana_real_reserva,data_fleet_semana_real_demora,data_fleet_semana_real_perdidaop,data_fleet_semana_real_efectivo], chartUsersOptions2);
+    });
+</script>
+
+</body>
+
+</html>
