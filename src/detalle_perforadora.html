@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>Heroca | GESPYT</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="lib/animate.css/animate.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/toastr/toastr.min.css"/>
+
+    <!-- Fonts styles -->
+    <link rel="stylesheet" href="fonts/pe-icons/pe-icon-7-stroke.css"/>
+    <link rel="stylesheet" href="fonts/pe-icons/helper.css"/>
+    <link rel="stylesheet" href="fonts/stroke-icons/style.css"/>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-- Wrapper-->
+<div class="wrapper">
+
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    GESPYT
+                    <span>v.1.0</span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=" profil-link">
+                        <a href="login.html">
+                            <span class="profile-address">user@heroca.cl</span>
+                            <img src="img/user.jpg" class="img-circle" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header-->
+
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <li>
+                    <a class="nav-category" href="index.html">Inicio</a>
+                    <hr>
+                </li>
+                <li>
+                    <a class="nav-category" href="dashboard_tronadura.html">Tronadura</a>
+                    <hr>
+                </li>
+                <li>
+                    <a class="nav-category" href="dashboard_perforacion.html">Perforación</a>
+                </li>
+
+                <li>
+                    <a href="#kpis" data-toggle="collapse" aria-expanded="false">
+                        Indicadores de Rendimiento<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="kpis" class="nav nav-second collapse">
+                        <li><a href="detalle_kpi.html"> Disponibilidad</a></li>
+                        <li><a href="detalle_kpi.html"> Utilización Efectiva</a></li>
+                        <li><a href="detalle_kpi.html"> Rendimiento Efectivo</a></li>
+                        <li><a href="detalle_kpi.html"> Metros</a></li>
+                        <li><a href="detalle_kpi_tiempo.html"> Tiempo</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#reports" data-toggle="collapse" aria-expanded="false">
+                        Informes<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="reports" class="nav nav-second collapse">
+                        <li><a href="informe_turno.html"> Informe por Turno</a></li>
+                        <li><a href="informe_dia.html"> Informe por Día</a></li>
+                        <li><a href="informe_semana.html"> Informe por Semana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-logo">
+            <a href="http://www.heroca.cl">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+    </aside>
+    <!-- End navigation-->
+
+
+    <!-- Main content-->
+    <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="view-header">
+                            <div class="header-icon m-r-sm">
+                                <i class="pe page-header-icon fa fa-cog"></i>
+                            </div>
+                            <div class="header-title">
+                                <h3 class="m-b-xs">Detalle Perforadora D101</h3>
+                                <small><span class="c-white">Operador:</span> Juan Luis Cavas Pizarro</small>
+                                <small><span class="c-white">Banco:</span> 4400 </small>
+                                <small><span class="c-white">Malla:</span> 05C4385_050 </small>
+                                <small><span class="c-white">Pozo Actual:</span> 18 </small>
+                                <small><span class="c-white">UGP:</span> 7 </small>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div class="gaugemeter" id="gauge_1"
+                            data-percent="24"
+                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                            data-size="100"
+                            data-width="10"
+                            data-style="Semi"
+                            data-theme="Red-Gold-Green"
+                            data-label_color="#ffffff"
+                        ></div>
+                        <div class="small text-center">
+                            <span class="slight">34/80</span> <br>
+                            <span class="c-white">Pozos Perforados</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div class="gaugemeter" id="gauge_1"
+                            data-percent="89"
+                            data-append=' <i class="fa fa-percent text-warning"> </i>'
+                            data-size="100"
+                            data-width="10"
+                            data-style="Semi"
+                            data-theme="Red-Gold-Green"
+                            data-label_color="#ffffff"
+                        ></div>
+                        <div class="small text-center">
+                            <span class="slight">34/80</span> <br>
+                            <span class="c-white">Metros Perforados</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-5 m-t-sm">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <div class="pull-right">
+                                    <h2 class="m-b-none">
+                                         98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                    </h2>
+                                </div>
+                                <h5>Disponibilidad</h5>
+                            </div>
+                            <div class="panel-body">
+
+                                <div id="chart_kpi_disponibilidad" style="height: 200px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 m-t-sm">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <div class="pull-right">
+                                    <h2 class="m-b-none">
+                                         67 <span class="slight"><i class="fa fa-play fa-rotate-90 c-red"> </i> -12%</span>
+                                    </h2>
+                                </div>
+                                <h5>Utilización efectiva</h5>
+                            </div>
+                            <div class="panel-body">
+                                <div id="chart_kpi_utilizacion" style="height: 200px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 m-t-sm">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <div class="pull-right">
+                                    <h2 class="m-b-none">
+                                         78 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                    </h2>
+                                </div>
+                                <h5>Rendimiento efectivo</h5>
+                            </div>
+                            <div class="panel-body">
+                                <div id="chart_kpi_rendimiento" style="height: 200px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 m-t-sm">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <div class="pull-right">
+                                    <h2 class="m-b-none">
+                                         91 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +12%</span>
+                                    </h2>
+                                </div>
+                                <h5>Metros</h5>
+                            </div>
+                            <div class="panel-body">
+                                <div id="chart_kpi_metros" style="height: 200px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 m-t-sm">
+                        <div class="panel panel-filled">
+                            <div class="panel-heading">
+                                <h5>Tiempos</h5>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6 m-t-sm">
+                                        <div class="pull-right">
+                                            <h4 class="m-b-none">
+                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                            </h4>
+                                        </div>
+                                        <h5>Efectivo</h5>
+                                        <div id="chart_kpi_tiempo_efectivo" style="height: 200px;"></div>
+                                    </div>
+                                    <div class="col-md-6 m-t-sm">
+                                        <div class="pull-right">
+                                            <h4 class="m-b-none">
+                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                            </h4>
+                                        </div>
+                                        <h5>Pérdida Operacional</h5>
+                                        <div id="chart_kpi_tiempo_perdida" style="height: 200px;"></div>
+                                    </div>
+                                    <div class="col-md-4 m-t-sm">
+                                        <div class="pull-right">
+                                            <h4 class="m-b-none">
+                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                            </h4>
+                                        </div>
+                                        <h5>Demora</h5>
+                                        <div id="chart_kpi_tiempo_demora" style="height: 200px;"></div>
+                                    </div>
+                                    <div class="col-md-4 m-t-sm">
+                                        <div class="pull-right">
+                                            <h4 class="m-b-none">
+                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                            </h4>
+                                        </div>
+                                        <h5>Reserva</h5>
+                                        <div id="chart_kpi_tiempo_reserva" style="height: 200px;"></div>
+                                    </div>
+                                    <div class="col-md-4 m-t-sm">
+                                        <div class="pull-right">
+                                            <h4 class="m-b-none">
+                                                 98 <span class="slight"><i class="fa fa-play fa-rotate-270 c-green"> </i> +6%</span>
+                                            </h4>
+                                        </div>
+                                        <h5>Mantención</h5>
+                                        <div id="chart_kpi_tiempo_mantencion" style="height: 200px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End main content-->
+
+</div>
+<!-- End wrapper-->
+
+<!-- Vendor scripts -->
+<script src="lib/PACE/pace.min.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/toastr/toastr.min.js"></script>
+<script src="lib/sparkline/index.js"></script>
+<script src="lib/gaugemeter/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+<script src="lib/Flot/jquery.flot.js"></script>
+<script src="lib/Flot/jquery.flot.resize.js"></script>
+<script src="lib/Flot/jquery.flot.categories.js"></script>
+<script src="lib/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
+<!-- App scripts -->
+<script src="js/app.js"></script>
+
+<script>
+        var data_seed = [["16-mar", 16], ["17-mar", 24], ["18-mar", 11], ["19-mar", 7], ["20-mar", 10], ["21-mar", 15], ['22-mar', 24]]
+
+        var data_disponibilidad_plan = {
+            label: "plan",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+        var data_disponibilidad_real = {
+            label: "real",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+
+        var data_utilizacion_plan = {
+            label: "plan",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+        var data_utilizacion_real = {
+            label: "real",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+
+        var data_rendimiento_plan = {
+            label: "plan",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+        var data_rendimiento_real = {
+            label: "real",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+
+        var data_metros_plan = {
+            label: "plan",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+        var data_metros_real = {
+            label: "real",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+
+        var data_tiempo_plan = {
+            label: "plan",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+        var data_tiempo_real = {
+            label: "real",
+            data: data_seed.map(function(o){return [o[0],o[1]*Math.random()]})
+        };
+
+    $(document).ready(function () {
+
+        var chartUsersOptions = {
+            series: {
+                lines: { show: true },
+                points: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 1,
+                    fill: 1
+                }
+            },
+            colors: [ "#f7af3e","#3090c0"],
+            tooltip: {
+                show: true,
+                content: "%s: %y\%"
+            },
+            xaxis: {
+                mode: "categories",
+                tickLength: 1
+            },
+            grid: {
+                tickColor: "#51545A",
+                borderWidth: 0,
+                borderColor: '#51545A',
+                color: '#404652',
+                hoverable: true
+            },
+            legend: { show: false }
+        };
+
+
+        $.plot($("#chart_kpi_disponibilidad"), [data_disponibilidad_plan, data_disponibilidad_real], chartUsersOptions);
+        $.plot($("#chart_kpi_utilizacion"), [data_utilizacion_plan, data_utilizacion_real], chartUsersOptions);
+        $.plot($("#chart_kpi_rendimiento"), [data_rendimiento_plan, data_rendimiento_real], chartUsersOptions);
+        $.plot($("#chart_kpi_metros"), [data_metros_plan, data_metros_real], chartUsersOptions);
+
+        $.plot($("#chart_kpi_tiempo_efectivo"), [data_tiempo_plan, data_tiempo_real], chartUsersOptions);
+        $.plot($("#chart_kpi_tiempo_perdida"), [data_tiempo_plan, data_tiempo_real], chartUsersOptions);
+        $.plot($("#chart_kpi_tiempo_demora"), [data_tiempo_plan, data_tiempo_real], chartUsersOptions);
+        $.plot($("#chart_kpi_tiempo_reserva"), [data_tiempo_plan, data_tiempo_real], chartUsersOptions);
+        $.plot($("#chart_kpi_tiempo_mantencion"), [data_tiempo_plan, data_tiempo_real], chartUsersOptions);
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>Heroca | GESPYT</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="lib/animate.css/animate.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/toastr/toastr.min.css"/>
+
+    <!-- Fonts styles -->
+    <link rel="stylesheet" href="fonts/pe-icons/pe-icon-7-stroke.css"/>
+    <link rel="stylesheet" href="fonts/pe-icons/helper.css"/>
+    <link rel="stylesheet" href="fonts/stroke-icons/style.css"/>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-- Wrapper-->
+<div class="wrapper">
+
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    GESPYT
+                    <span>v.1.0</span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=" profil-link">
+                        <a href="login.html">
+                            <span class="profile-address">user@heroca.cl</span>
+                            <img src="img/user.jpg" class="img-circle" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header-->
+
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <li>
+                    <a class="nav-category" href="index.html">Inicio</a>
+                    <hr>
+                </li>
+                <li>
+                    <a class="nav-category" href="dashboard_tronadura.html">Tronadura</a>
+                    <hr>
+                </li>
+                <li>
+                    <a class="nav-category" href="dashboard_perforacion.html">Perforación</a>
+                </li>
+
+                <li>
+                    <a href="#kpis" data-toggle="collapse" aria-expanded="false">
+                        Indicadores de Rendimiento<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="kpis" class="nav nav-second collapse">
+                        <li><a href="detalle_kpi.html"> Disponibilidad</a></li>
+                        <li><a href="detalle_kpi.html"> Utilización Efectiva</a></li>
+                        <li><a href="detalle_kpi.html"> Rendimiento Efectivo</a></li>
+                        <li><a href="detalle_kpi.html"> Metros</a></li>
+                        <li><a href="detalle_kpi_tiempo.html"> Tiempo</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#reports" data-toggle="collapse" aria-expanded="false">
+                        Informes<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="reports" class="nav nav-second collapse">
+                        <li><a href="informe_turno.html"> Informe por Turno</a></li>
+                        <li><a href="informe_dia.html"> Informe por Día</a></li>
+                        <li><a href="informe_semana.html"> Informe por Semana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-logo">
+            <a href="http://www.heroca.cl">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+    </aside>
+    <!-- End navigation-->
+
+
+    <!-- Main content-->
+    <section class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="view-header">
+                            <div class="header-icon m-r-sm">
+                                <i class="pe page-header-icon fa fa-file-text-o"></i>
+                            </div>
+                            <div class="header-title">
+                                <h3 class="m-b-xs">Reporte de Perforación Diario</h3>
+                                <small>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ad in quae facere dolore labore laudantium quisquam maiores recusandae neque iste, magnam nostrum officiis, dolor voluptatum ipsam, a veniam reprehenderit.
+                                </small>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="panel panel-filled">
+                                <div class="panel-heading">
+                                    <div class="panel-tools">
+                                        <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                        <a class="panel-close"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    Martes 9 de Febrero de 2016
+
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table id="report-fleet" class="table table-bordered table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th colspan="2">Flota de perforación</th>
+                                                <th colspan="2">Turno</th>
+                                                <th>Real</th>
+                                                <th>Plan</th>
+                                                <th rowspan="2">Diferencia</th>
+                                                <th colspan="2">MTD</th>
+                                                <th rowspan="2">Diferencia</th>
+                                            </tr>
+                                            <tr>
+                                                <th>KPI</th>
+                                                <th>Unidad</th>
+                                                <th>A</th>
+                                                <th>B</th>
+                                                <th>09-feb</th>
+                                                <th>09-feb</th>
+                                                <th>Real</th>
+                                                <th>Mensual</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Disponibilidad</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Utilización Operacional</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Utilización Efectiva</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rendimiento Operacional</td>
+                                                    <td>m/h</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rendiemiento Efectivo</td>
+                                                    <td>m/h</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Metros perforados</td>
+                                                    <td>m</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Estados</th>
+                                                    <th>Unidad</th>
+                                                    <th>A</th>
+                                                    <th>B</th>
+                                                    <th>09-feb</th>
+                                                    <th>09-feb</th>
+                                                    <th>Diferencia</th>
+                                                    <th>Real</th>
+                                                    <th>Mensual</th>
+                                                    <th>Diferencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mantenciones</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Reservas</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Demoras</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Perdidas operacionales</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Efectivo</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+
+                                    <div class="table-responsive m-t-sm">
+                                        <table id="report-machine-1" class="table table-bordered table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th colspan="2">Flota de perforación</th>
+                                                <th colspan="2">Turno</th>
+                                                <th>Real</th>
+                                                <th>Plan</th>
+                                                <th rowspan="2">Diferencia</th>
+                                                <th colspan="2">MTD</th>
+                                                <th rowspan="2">Diferencia</th>
+                                            </tr>
+                                            <tr>
+                                                <th>KPI</th>
+                                                <th>Unidad</th>
+                                                <th>A</th>
+                                                <th>B</th>
+                                                <th>09-feb</th>
+                                                <th>09-feb</th>
+                                                <th>Real</th>
+                                                <th>Mensual</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Disponibilidad</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Utilización Operacional</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Utilización Efectiva</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rendimiento Operacional</td>
+                                                    <td>m/h</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rendiemiento Efectivo</td>
+                                                    <td>m/h</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Metros perforados</td>
+                                                    <td>m</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Estados</th>
+                                                    <th>Unidad</th>
+                                                    <th>A</th>
+                                                    <th>B</th>
+                                                    <th>09-feb</th>
+                                                    <th>09-feb</th>
+                                                    <th>Diferencia</th>
+                                                    <th>Real</th>
+                                                    <th>Mensual</th>
+                                                    <th>Diferencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mantenciones</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Reservas</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Demoras</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Perdidas operacionales</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Efectivo</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+
+                                    <div class="table-responsive m-t-sm">
+                                        <table id="report-machine-2" class="table table-bordered table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th colspan="2">Flota de perforación</th>
+                                                <th colspan="2">Turno</th>
+                                                <th>Real</th>
+                                                <th>Plan</th>
+                                                <th rowspan="2">Diferencia</th>
+                                                <th colspan="2">MTD</th>
+                                                <th rowspan="2">Diferencia</th>
+                                            </tr>
+                                            <tr>
+                                                <th>KPI</th>
+                                                <th>Unidad</th>
+                                                <th>A</th>
+                                                <th>B</th>
+                                                <th>09-feb</th>
+                                                <th>09-feb</th>
+                                                <th>Real</th>
+                                                <th>Mensual</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Disponibilidad</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Utilización Operacional</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Utilización Efectiva</td>
+                                                    <td>%</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rendimiento Operacional</td>
+                                                    <td>m/h</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rendiemiento Efectivo</td>
+                                                    <td>m/h</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Metros perforados</td>
+                                                    <td>m</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Estados</th>
+                                                    <th>Unidad</th>
+                                                    <th>A</th>
+                                                    <th>B</th>
+                                                    <th>09-feb</th>
+                                                    <th>09-feb</th>
+                                                    <th>Diferencia</th>
+                                                    <th>Real</th>
+                                                    <th>Mensual</th>
+                                                    <th>Diferencia</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mantenciones</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Reservas</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Demoras</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Perdidas operacionales</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-times-circle c-red"></i> <span class="c-red">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Efectivo</td>
+                                                    <td>hrs</td>
+                                                    <td>97.4</td>
+                                                    <td>99.3</td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">7.0</span></td>
+                                                    <td>98.7</td>
+                                                    <td>91.7</td>
+                                                    <td><i class="fa fa-check-circle c-green"></i> <span class="c-green">6.0</span></td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </section>
+    <!-- End main content-->
+
+</div>
+<!-- End wrapper-->
+
+<!-- Vendor scripts -->
+<script src="lib/PACE/pace.min.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/toastr/toastr.min.js"></script>
+<script src="lib/sparkline/index.js"></script>
+<script src="lib/gaugemeter/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+<script src="lib/Flot/jquery.flot.js"></script>
+<script src="lib/Flot/jquery.flot.resize.js"></script>
+<script src="lib/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
+<!-- App scripts -->
+<script src="js/app.js"></script>
+
+<script>
+
+    $(document).ready(function () {});
+</script>
+
+</body>
+
+</html>

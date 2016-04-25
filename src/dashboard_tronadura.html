@@ -70,9 +70,11 @@
             <ul class="nav luna-nav">
                 <li>
                     <a class="nav-category" href="index.html">Inicio</a>
+                    <hr>
                 </li>
                 <li>
-                    <a class="nav-category" href="index.html">Tronadura</a>
+                    <a class="nav-category" href="dashboard_tronadura.html">Tronadura</a>
+                    <hr>
                 </li>
                 <li>
                     <a class="nav-category" href="dashboard_perforacion.html">Perforación</a>
@@ -83,11 +85,11 @@
                         Indicadores de Rendimiento<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
                     </a>
                     <ul id="kpis" class="nav nav-second collapse">
-                        <li><a href="#"> Disponibilidad</a></li>
-                        <li><a href="#"> Utilización Efectiva</a></li>
-                        <li><a href="#"> Rendimiento Efectivo</a></li>
-                        <li><a href="#"> Metros</a></li>
-                        <li><a href="#"> Tiempo</a></li>
+                        <li><a href="detalle_kpi.html"> Disponibilidad</a></li>
+                        <li><a href="detalle_kpi.html"> Utilización Efectiva</a></li>
+                        <li><a href="detalle_kpi.html"> Rendimiento Efectivo</a></li>
+                        <li><a href="detalle_kpi.html"> Metros</a></li>
+                        <li><a href="detalle_kpi_tiempo.html"> Tiempo</a></li>
                     </ul>
                 </li>
 
@@ -96,9 +98,9 @@
                         Informes<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
                     </a>
                     <ul id="reports" class="nav nav-second collapse">
-                        <li><a href="#"> Informe por Turno</a></li>
-                        <li><a href="#"> Informe por Día</a></li>
-                        <li><a href="#"> Informe por Semana</a></li>
+                        <li><a href="informe_turno.html"> Informe por Turno</a></li>
+                        <li><a href="informe_dia.html"> Informe por Día</a></li>
+                        <li><a href="informe_semana.html"> Informe por Semana</a></li>
                     </ul>
                 </li>
             </ul>
@@ -137,20 +139,53 @@
                     <div class="tabs-container m-t-sm">
                         <div class="tabs-left">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a data-toggle="tab" href="#machine-1" aria-expanded="false"><span class="slight">Perforadora D101</span></a></li>
-                                <li class=""><a data-toggle="tab" href="#machine-2" aria-expanded="false"><span class="slight">Perforadora D102</span></a></li>
+                                <li class="active"><a data-toggle="tab" href="#machine-1" aria-expanded="false"><span class="slight">Pala 203</span></a></li>
+                                <li class=""><a data-toggle="tab" href="#machine-2" aria-expanded="false"><span class="slight">Pala 204</span></a></li>
                             </ul>
                             <div class="tab-content">
                                 <div id="machine-1" class="tab-pane active">
                                     <div class="panel-body">
                                         <div class="container-fluid">
                                             <div class="row">
+                                                <div class="col-md-4">
+                                                    <span class="c-white">Destino:</span> <span class="slight c-gray">DUMP</span><br>
+                                                    <span class="c-white">Ubicación:</span> <span class="slight c-gray">F05_4305_015</span><br>
+                                                    <span class="c-white">Fecha Muestra:</span> <span class="slight c-gray">21 de Abril de 2016</span>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <table class="table table-bordered heroca-table m-b-none">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>F01</th>
+                                                                <th>F02</th>
+                                                                <th>F03</th>
+                                                                <th>F04</th>
+                                                                <th>F05</th>
+                                                                <th>F06</th>
+                                                                <th>F07</th>
+                                                                <th>F08</th>
+                                                                <th>F09</th>
+                                                                <th>F10</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                                <td>0.0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <div class="col-xs-12">
-
-                                                    <span class="c-white">Destino:</span> <span class="slight c-gray">DUMP</span>
-                                                    <span class="c-white">Ubicación:</span> <span class="slight c-gray">F05_4305_015</span>
-
-                                                    <div class="panel panel-filled">
+                                                    <div class="panel panel-filled m-t-sm">
                                                         <div class="panel-heading text-center">
                                                             <div class="panel-tools">
                                                                 <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
@@ -250,12 +285,13 @@
                 content: "%s: %y\%"
             },
             grid: {
-                tickColor: "#404652",
+                tickColor: "#51545A",
                 borderWidth: 0,
                 borderColor: '#404652',
                 color: '#404652',
                 hoverable: true
-            }
+            },
+            legend: {show: false}
         };
 
         $.plot($("#chart_kpi_machine_1"), [data_machine1_tronadura], chartUsersOptions);
